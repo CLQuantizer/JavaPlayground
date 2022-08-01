@@ -1,22 +1,24 @@
 public class PassByValue {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        int c = a + b;
+        int a = 1;
+        int n = 4;
+        
         System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
-        System.out.println("");
-        System.out.println("After passing a and b to the method, a and b are not changed");
-        System.out.println("");
-        passByValue(a, b);
+        System.out.println("n = " + n);
+
+        System.out.println("After passing a and b to the method, a and n are not changed\n");
+        
+        int res = passByValue(a, n);
         System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
+        System.out.println("n = " + n);
+        System.out.println("res = " + res);
     }
-    public static void passByValue(int a, int b) {
-        a = a + b;
-        b = a - b;
-        a = a - b;
+    
+    static public int passByValue(int a, int n) {
+        while(n>0){
+            a = a * 2;
+            n--;
+        }
+        return a;
     }
 }
