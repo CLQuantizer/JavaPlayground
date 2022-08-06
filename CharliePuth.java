@@ -1,5 +1,3 @@
-import java.util.List;
-
 class CharliePuth implements SomeTypeOfLove<String>{
     static private String name="Charlie";
     static private String Lyrics= "When the world's on fire I won't even move\nThere is no reason if I'm here with you.";
