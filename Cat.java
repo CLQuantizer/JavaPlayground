@@ -1,6 +1,4 @@
 class Cat extends Animal {
-    
-
     public Cat(String name) {
         super(name, FoodChainLevel.HIGH);
         System.out.println("Super.name is: "+ super.getName());
