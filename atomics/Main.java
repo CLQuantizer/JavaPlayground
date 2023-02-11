@@ -35,6 +35,6 @@ public class Main {
         
         System.out.println("Counter: " + counter);
         System.out.println("Counter: " + ac);
-        System.out.println("Counter: " + at.get());
+        System.out.println("Counter: " + at);
     }
 }

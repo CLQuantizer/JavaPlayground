@@ -3,6 +3,10 @@ package atomics;
 class Atom {
 
     private int value;
+    @Override
+    public String toString() {
+        return Integer.toString(this.get());
+    }
 
     public Atom(int initialValue) {
         this.value = initialValue;
