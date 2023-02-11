@@ -9,6 +9,10 @@ public abstract class Animal implements Comparable<Animal> {
 		this.foodChainLevel = level;
 		System.out.println("Arg Animal constructed");
 	}
+	public void setName(String name){
+		this.name=name;
+	}
+
 	public abstract void eat();
 	public String getName(){
 		return this.name;
